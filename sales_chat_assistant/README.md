@@ -94,7 +94,7 @@ Verify that the token.json file is created. This file will be used for subsequen
 **Key dependencies for this project include:**
 
  - Chainlit: Framework for building conversational UIs.
- - LlamaIndex: Provides LinkedIn integration.
+ - LlamaIndex: AI Agent Framework for building conversational AI agents.
  - Google APIs: Enables Gmail and Calendar functionalities.
  - OpenAI: Provides the AI model for conversational understanding.
  - HorizonDataWave: Provides AI-powered LinkedIn search capabilities.
