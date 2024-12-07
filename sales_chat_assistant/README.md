@@ -7,6 +7,7 @@
 - **LinkedIn Integration**: Search for profiles, companies, and job listings based on user queries.
 - **Gmail Management**: Read, compose, and organize emails from your inbox.
 - **Google Calendar Assistance**: Create, read, update, and delete events in your Google Calendar.
+- **Google Search**: Perform web searches and retrieve relevant information via SerperDevtool API.
 - **Intelligent Tool Selection**: Automatically selects the appropriate tool based on the user's query.
 - **Personalized Assistance**: Responds to user inputs contextually and confirms critical details before executing actions.
 
@@ -42,6 +43,7 @@ OAUTH_GOOGLE_CLIENT_SECRET=<your_google_client_secret>
 CHAINLIT_PORT=8001
 HDW_API_URL=https://api.horizondatawave.ai/api
 HDW_API_KEY=<your_hdw_api_key>
+SERPER_API_KEY=<your_serper_api_key>
 ```
 
 Replace placeholders with actual values. You can obtain your HDW_API_KEY from [HorizonDataWave](https://horizondatawave.ai)

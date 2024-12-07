@@ -5,6 +5,8 @@ from llama_index.agent.openai import OpenAIAgent
 from llama_index.llms.openai import OpenAI
 from hdw_tools.tools.llama_linkedin import LinkedInToolSpec
 from llama_index.tools.google import GmailToolSpec, GoogleCalendarToolSpec
+from tools.serperdevtool_llamaindex import SerperToolSpec
+from tools.ScrapeWebsiteTool import ScrapeWebsiteTool
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -21,6 +23,8 @@ async def start():
         "1) LinkedIn tools for searching profiles, companies, jobs; "
         "2) Gmail tools for reading, sending, and organizing emails; "
         "3) Google Calendar tools for creating, reading, updating, and deleting calendar events. "
+        "4) Serper tools for searching the web. "
+        "5) fetch_content tool for scraping websites. Use it after Serper tools or when needed research website"
         "From the user's messages, infer which toolset to use. "
         "If the user asks something related to LinkedIn, use the LinkedIn tools. "
         "If the user wants to send or read emails, use the Gmail tools. "
@@ -31,9 +35,10 @@ async def start():
         "When working with the calendar, ensure to confirm the details with the user (such as time, date, and participants) before performing actions."
     )
 
-    # Создаем "суперагента" с двумя наборами инструментов
     agent = OpenAIAgent.from_tools(
-        [tool for sublist in [LinkedInToolSpec().to_tool_list(), GmailToolSpec().to_tool_list(), GoogleCalendarToolSpec().to_tool_list()] for tool in sublist],
+        [tool for sublist in [LinkedInToolSpec().to_tool_list(), GmailToolSpec().to_tool_list(),
+                              GoogleCalendarToolSpec().to_tool_list(), SerperToolSpec().to_tool_list(),
+                              ScrapeWebsiteTool().to_tool_list()] for tool in sublist],
         llm=llm,
         verbose=True,
         system_prompt=system_message

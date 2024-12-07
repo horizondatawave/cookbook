@@ -3,3 +3,4 @@ openai
 llama_index
 llama-index-tools-google
 hdw_tools
+BeautifulSoup
