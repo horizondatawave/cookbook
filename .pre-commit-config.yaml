@@ -1,0 +1,35 @@
+default_language_version:
+  python: python3.12
+fail_fast: true
+repos:
+-   repo: local
+    hooks:
+    -   id: ruff-format
+        name: ruff-format
+        entry: ruff format --force-exclude
+        language: python
+        types_or: [python, pyi]
+        args: []
+        require_serial: true
+        additional_dependencies: []
+        minimum_pre_commit_version: "2.9.2"
+
+    -   id: ruff
+        name: ruff
+        entry: ruff check
+        language: python
+        types: [python]
+        args: [--preview, --fix, --exit-non-zero-on-fix]
+
+    -   id: mypy
+        name: mypy
+        entry: mypy
+        language: python
+        types_or: [python, pyi]
+        args: [--config-file=./mypy.ini]
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+    -   id: check-yaml
+        name: check-yaml
