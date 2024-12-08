@@ -1,6 +1,6 @@
-# Sales Chat Assistant
+# Sales AI-Assistant
 
-**Sales Chat Assistant** is an AI-powered assistant designed to help users streamline their sales and scheduling workflows. The assistant integrates with LinkedIn, Gmail, and Google Calendar, enabling seamless profile searches, email management, and event scheduling.
+**Sales AI-Assistant** is an AI-powered assistant designed to help users streamline their sales and scheduling workflows. The assistant integrates with LinkedIn, Gmail, and Google Calendar, enabling seamless profile searches, email management, and event scheduling.
 
 ## Features
 
@@ -27,6 +27,9 @@ Follow the steps below to set up and run the project.
 3. **HorizonDataWave API Key**
    - Register at [HorizonDataWave](https://horizondatawave.ai).
    - Obtain your API key from the dashboard.
+4. **SerperDevtool API Key**
+    - Register at [SerperDev](https://serper.dev).
+    - Obtain your API key from the dashboard.
 
 ---
 
