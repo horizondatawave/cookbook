@@ -3,7 +3,7 @@
 **Sales AI-Assistant** is an AI-powered assistant designed to help users streamline their sales and scheduling workflows. The assistant integrates with LinkedIn, Gmail, and Google Calendar, enabling seamless profile searches, email management, and event scheduling.
 
 ## Features
- 
+
 - **LinkedIn Integration**: Search for profiles, companies, and job listings based on user queries.
 - **Gmail Management**: Read, compose, and organize emails from your inbox.
 - **Google Calendar Assistance**: Create, read, update, and delete events in your Google Calendar.
