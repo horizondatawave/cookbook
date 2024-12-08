@@ -1,6 +1,6 @@
 chainlit
 openai
-llama_index
+llama-index
 llama-index-tools-google
-hdw_tools
-BeautifulSoup
+hdw-tools
+beautifulsoup4
