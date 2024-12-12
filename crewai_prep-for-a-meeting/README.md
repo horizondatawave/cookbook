@@ -21,7 +21,7 @@ Features
 1. Clone the repository:
         
     ```bash
-        git clone https://github.com/your-username/crewai_prep-for-a-meeting.git
+        git clone https://github.com/horizondatawave/cookbook.git
         cd crewai_prep-for-a-meeting
     ```
 
