@@ -1,18 +1,27 @@
 import chainlit as cl
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 from llama_index.agent.openai import OpenAIAgent
 from llama_index.llms.openai import OpenAI
 from hdw_tools.tools.llama_linkedin import LinkedInToolSpec
 from llama_index.tools.google import GmailToolSpec, GoogleCalendarToolSpec
 from tools.serperdevtool_llamaindex import SerperToolSpec
 from tools.ScrapeWebsiteTool import ScrapeWebsiteTool
+from typing import Optional
+
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
 os.environ["OPENAI_MODEL_NAME"] = 'gpt-4o'
 
 llm = OpenAI(model="gpt-4o", temperature=0.2)
+
+@cl.password_auth_callback
+def auth_callback(username: str, password: str) -> Optional[cl.User]:
+    if (username, password) == ("admin", "admin"):
+        return cl.User(identifier="admin", metadata={"role": "ADMIN"})
+    else:
+        return None
 
 @cl.on_chat_start
 async def start():

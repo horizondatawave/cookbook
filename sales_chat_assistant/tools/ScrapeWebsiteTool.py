@@ -49,18 +49,11 @@ class ScrapeWebsiteTool(BaseToolSpec):
         )
         response.encoding = response.apparent_encoding
 
-        # Парсинг страницы с использованием BeautifulSoup
         parsed = BeautifulSoup(response.text, "html.parser")
 
-        # Извлечение и форматирование текста
+
         text = parsed.get_text()
-        # Удаление пустых строк и лишних пробелов
         text = '\n'.join([line for line in text.split('\n') if line.strip() != ''])
         text = ' '.join([word for word in text.split(' ') if word.strip() != ''])
 
         return text
-
-
-# tool = ScrapeWebsiteTool()
-# text = tool.fetch_content("https://www.statista.com/statistics/242477/global-revenue-of-market-research-companies/")
-# print(text)

@@ -1,9 +1,9 @@
 # Sales AI-Assistant
 
-**Sales AI-Assistant** is an AI-powered assistant designed to help users streamline their sales and scheduling workflows. The assistant integrates with LinkedIn, Gmail, and Google Calendar, enabling seamless profile searches, email management, and event scheduling.
+**Sales AI-Assistant** is an AI Agent designed to help users streamline their sales and scheduling workflows. The assistant integrates with LinkedIn, Gmail, and Google Calendar, Google search enabling seamless profile searches, email management, and event scheduling.
 
 ## Features
- 
+
 - **LinkedIn Integration**: Search for profiles, companies, and job listings based on user queries.
 - **Gmail Management**: Read, compose, and organize emails from your inbox.
 - **Google Calendar Assistance**: Create, read, update, and delete events in your Google Calendar.
@@ -57,7 +57,7 @@ Replace placeholders with actual values. You can obtain your HDW_API_KEY from [H
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/sales-chat-assistant.git
+   git clone https://github.com/horizondatawave/cookbook.git
    cd sales-chat-assistant
    
 2. **Create and activate a virtual environment:** 
