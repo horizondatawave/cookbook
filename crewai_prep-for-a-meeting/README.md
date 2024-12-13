@@ -1,8 +1,8 @@
-Prep for a Meeting
-==================
+# Prep for a Meeting
+
 A project designed to streamline meeting preparation with AI-powered agents and automated workflows based on CrewAI. This application helps users research participants, analyze industries, strategize for meetings, and generate meeting summaries—all in a seamless process.
 
-==================
+---
 
 ### Introduction
 
@@ -14,7 +14,7 @@ Features
 	•	Meeting Strategy Creation: Develops a tailored meeting strategy.
 	•	Summary Generation: Prepares a summary and briefing based on all gathered data.
 
-==================
+---
 
 ### Installation
 
@@ -33,7 +33,7 @@ Features
    
 3.	Set up environment variables by renaming .env.example to .env and configuring your settings.
 
-==================
+---
 
 ### Usage
 
@@ -43,7 +43,7 @@ Run the application with:
     python main.py
 ```
 
-==================
+---
 
 ### License
 
