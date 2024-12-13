@@ -4,3 +4,6 @@ llama-index
 llama-index-tools-google
 hdw-tools
 beautifulsoup4
+ruff==0.8.2
+mypy==1.13.0
+pre-commit==4.0.1
